@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+<!--    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>-->
+    <link href="css/cover.css" rel="stylesheet" type="text/css">
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <link href="css/imagesLoaded.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .dropdown-menu, .dropdown-item:hover {
+            border: none; /* Remove border */
+        }
+        .portfolio {
+            flex-grow: 1; /* Fill available space */
+            margin-top: 100px;
+        }
+        .image-link {
+            position: relative;
+            display: block;
+        }
+
+        .highlight-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(33, 33, 33, .7); /* Adjust the color and opacity as needed */
+            opacity: 0; /* Initially invisible */
+            transition: opacity 0.3s ease; /* Smooth transition */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-name{
+            color: #ebebec;
+            font-size: 20px;
+        }
+
+        .image-link:hover .highlight-overlay {
+            opacity: 1; /* Show the overlay on hover */
+        }
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var grid = document.querySelector('.row');
+            var msnry = new Masonry(grid, {
+                itemSelector: '.col-sm-6',
+                columnWidth: '.col-sm-6',
+                percentPosition: true
+            });
+        });
+    </script>
+
+</head>
+<body class="d-flex h-100 text-center text-bg-dark" >
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0">My Portfolio</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link fw-bold py-1 px-0" href="index.html">Home</a>
+                <a class="nav-link fw-bold py-1 px-0" href="About.html">About</a>
+                <a class="nav-link fw-bold py-1 px-0" href="Resume.html">Resume</a>
+                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="Portfolio.html">Portfolio</a>
+            </nav>
+        </div>
+    </header>
+
+<div class="portfolio">
+    <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1957px;">
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="card">
+                <a href="sci-fi-render.html" class="image-link">
+                <img src="images/portfolio/scifi/sci-fi-anim.jpg" class="card-img-top" width="100%" height="800px" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false" title="Sci-Fi Render">
+                <div class="highlight-overlay">
+                    <span class="image-name"> Sci-Fi Render</span>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="card">
+                <a href="vortex.html" class="image-link">
+                <img src="images/portfolio/the-rest-of-us/student-play-test.jpg" class="bd-placeholder-img card-img-top" width="100%" height="300"  role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <div class="highlight-overlay">
+                    <span class="image-name"> Vortex </span>
+                </div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+            <div class="card">
+                <a href="fossil-project.html" class="image-link">
+                    <img src="images/portfolio/fossil-project/table-layout.jpg" class="bd-placeholder-img card-img-top" width="100%" height="300"  role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false">
+                    <div class="highlight-overlay">
+                        <span class="image-name"> Experiencing Prehistory Through Virtual Reality </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+<!--        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">-->
+<!--            <div class="card">-->
+<!--                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title that wraps to a new line</h5>-->
+<!--                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">-->
+<!--            <div class="card">-->
+<!--                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title that wraps to a new line</h5>-->
+<!--                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">-->
+<!--            <div class="card">-->
+<!--                <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>-->
+<!--                <div class="card-body">-->
+<!--                    <h5 class="card-title">Card title that wraps to a new line</h5>-->
+<!--                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+</div>
+</div>
+
+    <footer class="mt-auto text-white-50">
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
+</div>
+</body>
+</html>

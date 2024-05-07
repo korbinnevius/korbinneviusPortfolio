@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" class=h-100 data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="font.css" rel="stylesheet" type="text/css">
+    <link href="css/cover.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .dropdown-menu, .dropdown-item:hover {
+            border: none; /* Remove border */
+        }
+
+        body{
+            background-image: url("images/dataVis.png");
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            background-color: #8587bc;
+            background-size: cover;
+        }
+        .cover-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        main {
+            flex-grow: 1; /* Fill available space */
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body class="d-flex h-100 text-center text-bg-dark" >
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div>
+            <h3 class="float-md-start mb-0">About Me</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link fw-bold py-1 px-0" href="index.html">Home</a>
+                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="About.html">About</a>
+                <a class="nav-link fw-bold py-1 px-0" href="Resume.html">Resume</a>
+                <a class="nav-link fw-bold py-1 px-0" href="Portfolio.html">Portfolio</a>
+
+                <!--                <a class="nav-link fw-bold py-1 px-0" href="featured.html">Featured</a>-->
+<!--                <button class="btn navbar-toggler nav-link fw-bold py-1 px-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--                    Portfolio-->
+<!--                </button>-->
+<!--                <div class="dropdown">-->
+<!--                    <ul class="dropdown-menu fw-bold py-1 px-0" aria-labelledby="navbarDropdown">-->
+<!--                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="featured.html">Featured</a></li>-->
+<!--                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="XR.html">XR</a></li>-->
+<!--                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="3d-modeling.html">3D Modeling</a></li>-->
+<!--                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="graphic-design.html">Graphic Design</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="px-3">
+        <h1>About</h1>
+        <p class="lead">Korbin Nevius (he/him) is an Immersive Media student at Chatham University with a minor in Graphic Design. Korbin works with Game Design Engines (Unity) and 3D software’s (Blender) to create immersive experiences through Virtual Reality (VR), Augmented Reality (AR).</p>
+        <p class="lead">Korbin is currently focused on Unity development but also uses emerging technologies and 3D software for the creation of logos and other forms of 3D art. His interests include the exploration of how to use art as a medium to share a connection of creativity with other media artists and spread his ideas through applications such as games, 3D museums, etc. He hopes to deepen his understanding of emerging medias and is excited about the future possibilities out there.</p>
+        <p class="lead">
+            <a href="Resume.html" class="btn btn-lg btn-light fw-bold border-white bg-white">Resume</a>
+        </p>
+    </main>
+
+    <footer class="mt-auto text-white-50">
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
+</div>
+</body>
+</html>

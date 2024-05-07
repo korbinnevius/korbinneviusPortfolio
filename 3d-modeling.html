@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100"  data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link href="font.css" rel="stylesheet" type="text/css">
+    <link href="css/cover.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+
+    <style>
+        .dropdown-menu, .dropdown-item:hover {
+            border: none; /* Remove border */
+        }
+        .navbar{
+            margin-bottom: 5px;
+        }
+        body{
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0);
+        }
+        .footer{
+
+            text-align: center; /* Or adjust as needed */
+            padding-top: 20px;
+            padding-bottom: 20px; /* Adjust as needed */
+        }
+    </style>
+
+</head>
+<body>
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+        <div class="navbar">
+            <h3 class="float-md-start mb-0">Hi, I'm Korbin</h3>
+            <nav class="nav nav-masthead justify-content-center float-md-end">
+                <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
+                <a class="nav-link fw-bold py-1 px-0" href="About.html">About</a>
+                <a class="nav-link fw-bold py-1 px-0" href="portfolio.html">Portfolio</a>
+
+                <button class="btn navbar-toggler nav-link fw-bold py-1 px-0" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portfolio
+                </button>
+                <div class="dropdown">
+                    <ul class="dropdown-menu fw-bold py-1 px-0" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="featured.html">Featured</a></li>
+                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="XR.html">XR</a></li>
+                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="3d-modeling.html">3D Modeling</a></li>
+                        <li><a class="dropdown-item nav-link fw-bold py-1 px-0" href="graphic-design.html">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main class="px-3">
+        <div class="row" data-masonry="{&quot;percentPosition&quot;: true }" style="position: relative; height: 1957px;">
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 0px;">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title that wraps to a new line</h5>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 410px;">
+                <div class="card p-3">
+                    <figure class="p-3 mb-0">
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-body-secondary">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 611px;">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img-top" width="100%" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text></svg>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 989px;">
+                <div class="card text-bg-primary text-center p-3">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-white">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1128px;">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has a regular title and short paragraph of text below it.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1306px;">
+                <div class="card">
+                    <svg class="bd-placeholder-img card-img" width="100%" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Card image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"></rect><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Card image</text></svg>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1592px;">
+                <div class="card p-3 text-end">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p>A well-known quote, contained in a blockquote element.</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-body-secondary">
+                            Someone famous in <cite title="Source Title">Source Title</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4 mb-4" style="position: absolute; left: 0%; top: 1731px;">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class=" footer mt-auto text-white-50">
+        <p>Cover template for <a href="https://getbootstrap.com/" class="text-white">Bootstrap</a>, by <a href="https://twitter.com/mdo" class="text-white">@mdo</a>.</p>
+    </footer>
+</div>
+</body>
+</html>
